@@ -1,0 +1,131 @@
+
+  .divheader nav{
+    display: none;
+  }
+  .divheader header{
+    width: 100%;
+    background-color: transparent;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgb(50, 54, 59);
+  }
+  .divheader header a{
+    padding: 15px 15px;
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1b262c;
+    font-weight: bold;
+    animation: MoverIzquierda 1.2s ease-in;
+    transition: all 1s ease;
+    color: white;
+    
+  }
+  .divheader header a:hover{
+    -webkit-box-shadow: 2px 4px 7px 2px #000000; 
+    box-shadow: 2px 4px 7px 2px #000000;
+    background-color: rgb(246, 251, 253);
+    border-radius: 1px;
+    color: black;
+  }
+  @media (max-width: 1200px){
+    .divheader header{
+      justify-content: center;
+    }
+    .divheader header a{
+      padding: 15px 15px;
+    }
+  }
+ 
+  @keyframes MoverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+  @media (max-width: 580px){
+    .divheader header{
+      display: none;
+    }
+    .divheader nav{
+      display: block;
+      position: fixed;
+      z-index: 3;
+    }
+  }
+  ul{
+    display: none;
+  }
+  
+  input:checked  ~ ul{
+    display:block;
+  }
+  
+  input {
+    display: none;
+  }
+  
+  label {
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid rgb(44, 40, 40);
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    line-height: 56px;
+    font-weight: bold;
+    text-align: center;
+    user-select: none;
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    transition: all 1s ease;
+    background-color: rgb(242, 248, 248);
+  }
+  
+  /* Estilo del boton cuando se pasa el mouse por encima*/
+  label:hover{
+    background: rgb(64, 71, 70);
+    transition: all 1s ease;
+  }
+  
+  /* Estilo del boton cuando el menú está expandido*/
+  input:checked ~ label {
+    background: lightgrey; 
+    transition: all 1s ease;
+  }
+  
+  ul{
+    margin-top:0;
+    padding: 0;
+    width: 200px;
+
+  }
+  .hamburguesas a {
+    display: block;
+    background: rgb(64, 71, 70);
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid grey;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    color: rgb(233, 223, 223);
+
+  }
+  
+  /*Estilo cuando el mouse pasa encima de cada link del menu*/
+  .hamburguesas a:hover {
+    background-color: rgb(102, 112, 111);
+  }
+  .divheader nav img{
+    width: 75%;
+  }

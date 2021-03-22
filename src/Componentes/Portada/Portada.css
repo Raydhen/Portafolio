@@ -1,0 +1,101 @@
+.Portada{
+    margin-top: 0px;
+    height: 700px;
+    background-image: url('../Imagenes/Fondos-de-pantalla-HD-portada.jpg');
+    background-size: cover;
+    z-index: 1;
+    overflow: hidden;
+	  border-radius: 0 0 85% 85% / 30%;
+    background-attachment: fixed;
+    position: relative;
+    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+  }
+.Contenido{
+  /*margin-top: 170px;*/
+  margin-left: 4%;
+  -webkit-box-shadow: -15px 0px 0px 0px rgb(111, 123, 226);
+  box-shadow: -15px 0px 0px 0px rgb(111, 123, 226);
+  position: absolute;
+  margin-top: 170px;
+  z-index: 0;
+}
+.Contenido h1{
+  font-size: 4rem;
+  margin-left: 2%;
+  color: white;
+  animation: MoverDerecha 1.2s ease-in;
+}
+.Contenido h2{
+  font-size: 2rem;
+  margin-left: 2%;
+  animation: MoverDerecha 1.2s ease-in;
+}
+.Contenido a{
+  padding: 10px 40px;
+  background-color: rgb(111, 123, 226);
+  margin-top: 20px;
+  border-radius: 10px;
+  /*text-decoration: none;*/
+  font-size: 15px;
+  font-weight: 700;
+  color: white;
+  -webkit-box-shadow: 2px 4px 7px 2px #000000; 
+  box-shadow: 2px 4px 7px 2px #000000;
+  transition: all 1s ease;
+  margin-left: 2%;
+  animation: MoverArriba 1.2s ease-in;
+  display: inline-block;
+  text-decoration: none;
+}
+.Contenido a:hover{
+  background-color: rgb(166, 173, 228);
+  color: black;
+  margin-top: 10px;
+}
+@media (max-width: 993px){
+  .Contenido{
+    margin-top: 200px;
+  }
+}
+@media (max-width: 720px){
+  .Contenido{
+    text-align: center;
+    box-shadow: 0px 0px 0px 0px rgb(111, 123, 226);
+    margin-left: 0;
+    width: 100%;
+  }
+  .Contenido h1{ margin-left: 0%;
+  }
+  .Contenido h2{margin-left: 0%;}
+  .Contenido a{margin-left: 0%;}
+}
+@keyframes MoverIzquierda{
+  0%{
+      opacity: 0;
+      transform: translate(-100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes MoverDerecha{
+  0%{
+      opacity: 0;
+      transform: translate(-100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes MoverArriba{
+  0%{
+      opacity: 0;
+      transform: translate(0,100px);
+  }
+  100%{
+      opacity: 1;
+      transform: translate(0);
+  }
+}

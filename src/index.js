@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {Route} from "wouter";
+import Configuracion from './Componentes/Configuracion/Configuracion'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Route path="/" component={App}/>
+    <Route path="/configuracion" component={Configuracion}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

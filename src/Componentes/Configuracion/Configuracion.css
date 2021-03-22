@@ -1,0 +1,68 @@
+.Configuracion{
+    height: 657px;
+    background-color: rgb(167, 135, 135);
+    overflow: hidden;
+    
+}
+.Contenido2{
+    text-align: center;
+    z-index: 3;
+    padding-top: 200px;
+}
+.Contenido2 h2{
+    font-size: 30px;
+}
+.Contenido2 h3{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.Contenido2 img{
+    width: 300px;
+}
+/*HEADERS*/
+.divheader2{
+    
+}
+  .divheader2 header{
+    width: 100%;
+    background-color: transparent;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    overflow: hidden;
+    z-index: 2;
+    flex-wrap: wrap;
+    position: fixed;
+    background-color: rgb(50, 54, 59);
+  }
+  .divheader2 header a{
+    padding: 15px 15px;
+    width: 7rem;
+    text-align: center;
+    text-decoration: none;
+    color: #1b262c;
+    font-weight: bold;
+    animation: MoverIzquierda 1.2s ease-in;
+    transition: all 1s ease;
+    color: white;
+    
+  }
+  .divheader2 header a:hover{
+    -webkit-box-shadow: 2px 4px 7px 2px #000000; 
+    box-shadow: 2px 4px 7px 2px #000000;
+    background-color: rgb(246, 251, 253);
+    border-radius: 1px;
+    color: black;
+  }
+ 
+  @keyframes MoverIzquierda{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+ 

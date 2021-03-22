@@ -1,0 +1,63 @@
+.ContenedorC{
+    background-color: #243238;
+
+    margin-top: 80px;
+}
+.ContenedorC .TituloC{
+    color: white;
+    text-align: center;
+}
+.ContenedorC .TituloC img{
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    transition: all 1s ease;
+}
+.Contacto{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.Contacto h1{
+    margin-left: 5px;
+}
+.ContenedorC .TituloC img:hover{
+    background-color: rgb(199, 196, 196);
+}
+.RedesSociales{
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+}
+.RedesSociales h1{
+    font-size: 30px;
+}
+.RedesSociales img{
+    width: 50px;
+    background: rgb(201,199,244);
+    background: linear-gradient(90deg, rgba(201,199,244,1) 40%, rgba(0,225,247,1) 100%);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    margin: 15px 10px;
+}
+.RedesSociales img:hover{
+    margin: 5px 10px;
+    cursor: pointer;
+}
+.final{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    justify-content:space-between;
+    text-align: center;
+}
+.final div{
+    padding: 10px 0px;
+}
+.texto a{
+    margin: auto 15px;
+}
+.texto a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}

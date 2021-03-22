@@ -1,0 +1,46 @@
+.Second{
+    height: 700px;
+    text-align: center;
+    justify-content: center;
+}
+.Second img{
+    border: 2px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height: 250px;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    transition:all 1s ease;
+}
+
+.texto{
+    letter-spacing: 1px;
+    padding: 10px 40px;
+}
+.Second a{
+    display: inline-block;
+    color: rgb(60, 174, 228);
+    text-decoration: none;
+    margin-top: 30px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgb(37, 29, 29);
+    padding: 10px 0;
+    transition:all .5s ease-in-out;
+    -webkit-box-shadow: 2px 4px 7px 2px #000000; 
+    box-shadow: 2px 4px 7px 2px #000000;
+}
+.Second a:hover{
+    background-color:  rgb(85, 80, 80);
+    margin-top: 25px;
+    color: rgb(238, 85, 85);
+    
+}
+.Second img:hover{
+    -webkit-transform: rotateY(180deg);
+    -webkit-transform-style: preserve-3d;
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;   
+}
